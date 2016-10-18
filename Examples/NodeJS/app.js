@@ -1,6 +1,6 @@
 var request = require("request"),
-    username = "UserLogin",
-    password = "Sh0wT!me",
+    username = "TheUserName",
+    password = "ThePassword",
     url = "https://syf2020.syfwebservices.com/syf/getRewards",
     auth = "Basic " + new Buffer(username + ":" + password)
 
