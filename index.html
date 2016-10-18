@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>Synchrony Financial - Hackathon Docs</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/9.6.0/styles/zenburn.min.css">
+    <link rel="stylesheet/less" type="text/css" href="things.less" />
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <script src="https://cdn.jsdelivr.net/g/jquery@3.1.1,highlight.js@9.6.0,babel@6.0.20,less@2.7.1"></script>
+    <script src="./things.js"></script>
+
+</head>
+<body style="display:none">
+
+    <nav class="navbar">
+        <div class="container">
+            <ul class="navbar-list">
+                <li class="navbar-item logo-item"><a class="navbar-link" scrollTo="#header"></a></li>
+
+                <li class="navbar-item divider-item"></li>
+
+                <li class="navbar-item">
+                    <a class="navbar-link" scrollTo="#schema">API Schema</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a class="navbar-link" scrollTo="#services">Services</a>
+                </li>
+
+                <!-- <li class="navbar-item">
+                    <a class="navbar-link" href="#getRewards">Get Rewards</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#nextMostLikelyPurchase">Most Likely</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a class="navbar-link" href="#applyForCredit">Apply</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row" id="header">
+            <div class="column" style="margin-top: 15%">
+                <h2>Synchrony Financial - Hackathon Docs </h2>
+
+            </div>
+        </div>
+        <hr>
+
+        <!-- ================================================================ schema -->
+        <div class="row" id="schema">
+            <div class="column">
+                <h3>API Schema</h3>
+                <p>All API access is accessed from the <code>https://syf2020.syfwebservices.com/syf/</code> endpoint. All data is sent and received as JSON. The below headers are needed for all calls.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Header</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>username</code></td>
+                            <td>UserLogin</td>
+                        </tr>
+
+                        <tr>
+                            <td><code>password</code></td>
+                            <td>Sh0wT!me</td>
+                        </tr>
+                        <tr>
+                            <td><code>Content-Type</code></td>
+                            <td>application/json</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <preTitle>Example request:</preTitle>
+                <pre class="no-margin">
+                    <code class="bash">
+                    curl https://syf2020.syfwebservices.com/syf/getReward
+                            -X POST
+                            -H "username: UserLogin"
+                            -H "password: Sh0wT!me"
+                            -H "Content-Type: application/json"
+                            -d '{
+                                    "Header": { "trans_id": "demorewards" },
+                                    "gps_syf_profileid": "6ff47aed18048b7708dd84b47152ee75db535e0eaa90b46fc3b7dc20745780dd"
+                                }'
+                    </code>
+                </pre>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row" id="services">
+            <div class="column">
+                <h3>Services</h3>
+            </div>
+        </div>
+
+        <div class="row" >
+            <div class="three columns">
+                <ul class="code-list">
+                    <li class="nav-link">
+                        getRewards
+                    </li>
+                    <li class="nav-link">
+                        nextMostLikelyPurchase
+                    </li>
+                    <li class="nav-link">
+                        applyForCredit
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nine columns">
+
+                <!-- ================================================================ getRewards -->
+                <div class="row service-block active" id="getRewards">
+                    <div class="column">
+                        <h4><code>/getRewards</code></h4>
+                        <p>This returns the current loyalty points balance of a customer and any redeemable reward certificates they have.</p>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>trans_id</code></td>
+                                    <td>This should always be demorewards</td>
+                                </tr>
+                                <tr>
+                                    <td><code>gps_syf_profileid</code></td>
+                                    <td>Use one of the following values, 6ff47aed18048b7708dd84b47152ee75db535e0eaa90b46fc3b7dc20745780dd, 0c5caa2eb76d70bd352e3454f088b984bef316803f8443fc28452d7f3492702d</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <preTitle>Example payload:</preTitle>
+                        <pre class="no-margin">
+                            <code class="bash">
+                                {
+                                    "Header": {
+                                        "trans_id": "demorewards"
+                                    },
+                                    "gps_syf_profileid": "6ff47aed18048b7708dd84b47152ee75db535e0eaa90b46fc3b7dc20745780dd"
+                                }
+                            </code>
+                        </pre>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>points_to_next_certificate</code></td>
+                                    <td>This shows you how many points the customer must earn to get their next certificate. This is useful for thermometer type implementations, where if maximum_points=400 and points_to_next_certificate=200 the thermometer is half full.
+                                    It is also useful for reminding customers who are close to earning a reward.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>certificate_value</code></td>
+                                    <td>This is the reward value in cents so 1000=$10</td>
+                                </tr>
+                                <tr>
+                                    <td><code>certificate_code</code></td>
+                                    <td>This code can be keyed in at the point of sale for redemption, or scanned as a barcode.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <preTitle>Example response:</preTitle>
+                        <pre class="no-margin">
+                            <code class="json">
+
+                                {
+                                    "Status": {
+                                        "response_code": "0",
+                                        "response_desc": "Success",
+                                        "trans_id": "demorewards"
+                                    },
+                                    "points_to_next_certificate": "400",
+                                    "maximum_points": "400",
+                                    "reward_dollar_amount": "10",
+                                    "redeemable_certificates": [
+                                    {
+					  "certificate_value": "1000",
+					  "expiration_date": "11-01-2016",
+					  "certificate_code": "H3JKQG7LBL98",
+					  "certificate_dollar_amount": "10"
+					}
+                                    ]
+                                }
+
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!-- <hr> -->
+
+                <!-- ================================================================ nextMostLikelyPurchase-->
+                <div class="row service-block" id="nextMostLikelyPurchase">
+                    <div class="column">
+                        <h4><code>/nextMostLikelyPurchase</code></h4>
+                        <p>This returns the likelihood of a customer making a purchase in a given category in the next 30 days.  A higher probability means the customer is more likely to make a purchase in that category.  Maximum probability score is 100, minimum is 0.</p>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>accountNum</code></td>
+                                    <td>Please use one of the following values, 100009</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <preTitle>Example payload:</preTitle>
+                        <pre class="no-margin">
+                            <code class="bash">
+                                {
+                                    "accountNum": "100009"
+                                }
+                            </code>
+                        </pre>
+
+                        <!-- <h4 class="code-title">Response</h4> -->
+                        <preTitle>Example response:</preTitle>
+                        <pre class="no-margin">
+                            <code class="json">
+
+                                {
+					"id": "57d84ae4d70c4857cbea3f11",
+					"accountNum": 100009,
+					"lastTransDate": "07-29-2016",
+					"categories": [
+					{
+					  "categoryName": "Automotive",
+					  "probability": 63
+					},
+					{
+					  "categoryName": "Electronics",
+					  "probability": 33
+					},
+					{
+					  "categoryName": "Gasoline",
+					  "probability": 32
+					},
+					{
+					  "categoryName": "Grocery",
+					  "probability": 62
+					},
+					{
+					  "categoryName": "Outdoor Living",
+					  "probability": 19
+					},
+					{
+					  "categoryName": "Jewelry",
+					  "probability": 35
+					},
+					{
+					  "categoryName": "Pets",
+					  "probability": 24
+					},
+					{
+					  "categoryName": "Bill Pay",
+					  "probability": 8
+					},
+					{
+					  "categoryName": "Restaurants",
+					  "probability": 7
+					},
+					{
+					  "categoryName": "Travel",
+					  "probability": 8
+					}
+				  ]
+				}
+
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!-- <hr> -->
+
+                <!-- ================================================================ applyForCredit -->
+                <div class="row service-block" id="applyForCredit">
+                    <div class="column">
+                        <h4><code>/applyForCredit</code></h4>
+                        <p>This service is used to apply for credit.  You submit customer information and get a back a credit decision.  If the customer is approved you will also get a temporary account number which can be used immediately for purchase.</p>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>lastname</code></td>
+                                    <td>This is the only field that needs to be modified for the Hackathon.  Please use one of the following values, APPROVAL, DECLINE, REFER</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <preTitle>Example payload:</preTitle>
+                        <pre class="no-margin">
+                            <code class="bash">
+                              {
+
+                                    "apply" : {
+                                        "applyRequest" : {
+                                            "authCosApplicantData" : {
+                                                "lastNameapp" : "",
+                                                "firstNameapp" : "",
+                                                "middleInitialapp" : "",
+                                                "suffixapp" : "",
+                                                "ssn1" : "",
+                                                "birthDateapp" : "",
+                                                "driverLicenseNumberapp" : "",
+                                                "driverLicenseStateapp" : "",
+                                                "signatureIndicatorapp" : "",
+                                                "titleapp" : "",
+                                                "occupationCodeapp" : "",
+                                                "incomeAnnualapp" : "",
+                                                "address" : {
+                                                    "address2app" : "",
+                                                    "stateapp" : "",
+                                                    "address1app" : "",
+                                                    "cityapp" : "",
+                                                    "zipCodeapp" : ""
+                                                },
+                                                "membershipNumberapp" : "",
+                                                "ssnOverrideapp" : "",
+                                                "driverLicenseExpiryDateapp" : ""
+                                            },
+                                            "spouseDetails" : {
+                                                "spFirstName" : "",
+                                                "spMiddleName" : "",
+                                                "spLastName" : "",
+                                                "address" : {
+                                                    "address2spd" : "",
+                                                    "statespd" : "",
+                                                    "address1spd" : "",
+                                                    "cityspd" : "",
+                                                    "zipCodespd" : ""
+                                                }
+                                            },
+                                            "merchantData" : {
+                                                "clientDepartment" : "",
+                                                "iovationRequestType" : "application",
+                                                "operator" : "ECOM",
+                                                "clientData" : "",
+                                                "merchantNumber" : "0000000000010032",
+                                                "country" : "US",
+                                                "deviceType" : "T",
+                                                "originalProductCode" : "010",
+                                                "rewardsCode" : "",
+                                                "membershipNumber" : "",
+                                                "primaryGroup" : "000",
+                                                "empAccountCode" : "Y",
+                                                "salesPerson" : "213006748",
+                                                "clientDataShare" : "",
+                                                "sendEmail" : "",
+                                                "referalCode" : "",
+                                                "register" : "REGISTER",
+                                                "clientId" : "TJX",
+                                                "referCode" : "",
+                                                "comment" : "",
+                                                "secondaryGroup" : "000"
+                                            },
+                                            "primaryApplicant" : {
+                                                "tempPassDays" : "",
+                                                "longitude" : "",
+                                                "cardIndSEDS" : "",
+                                                "promoTrack" : "",
+                                                "employerState" : "",
+                                                "spCode" : "",
+                                                "bankCardNumber" : "",
+                                                "signatureIndicator" : "",
+                                                "customerLoanTerm" : "",
+                                                "passportIssuingCountry" : "",
+                                                "swipeEdit" : "",
+                                                "address" : {
+                                                    "address2" : "",
+                                                    "state" : "IL",
+                                                    "address1" : "21 KING ARTHUR CT",
+                                                    "city" : "FANTASY ISLAND",
+                                                    "zipCode" : "60750"
+                                                },
+                                                "plateCode" : "",
+                                                "ssn" : "666010080",
+                                                "permanentResidentCard" : "",
+                                                "passportNumber" : "",
+                                                "cardIndVISA" : "",
+                                                "cardIndAMEX" : "",
+                                                "mobileStoreDistance" : "",
+                                                "bankCardType" : "",
+                                                "employerName" : "",
+                                                "redemptionAmount" : "",
+                                                "timeAtHome" : "",
+                                                "latitude" : "",
+                                                "applicationCountry" : "",
+                                                "homePhone" : "1234567891",
+                                                "requestedlineOfCredit" : "",
+                                                "relativeInfo" : "",
+                                                "memberNumber" : "",
+                                                "employerPhone" : "",
+                                                "imageDocID" : "",
+                                                "secLastName" : "",
+                                                "optOutFlag" : "",
+                                                "eBillEnrollment" : "",
+                                                "cardIndMC" : "",
+                                                "birthDate" : "19700605",
+                                                "promoCode" : "",
+                                                "incomeAnnual" : "12000000",
+                                                "companyPhone" : "",
+                                                "maidenName" : "",
+                                                "authCosCode" : "",
+                                                "insuranceCode" : "",
+                                                "onlineLetter" : "",
+                                                "billingLastName" : "",
+                                                "caCivicNumber" : "",
+                                                "previousAddress" : {
+                                                    "address2prvad" : "",
+                                                    "stateprvad" : "",
+                                                    "address1prvad" : "",
+                                                    "cityprvad" : "",
+                                                    "zipCodeprvad" : ""
+                                                },
+                                                "mobileDeviceType" : "",
+                                                "lastName" : "APPROVAL",
+                                                "billinngCycle" : "",
+                                                "firstName" : "JOE",
+                                                "ipAddress" : "",
+                                                "purchaseAmount" : "",
+                                                "extensionPhoneNumber" : "",
+                                                "driverLicenseState" : "",
+                                                "sourceCode" : "",
+                                                "mothersBirthDate" : "",
+                                                "driverLicenseExpiryDate" : "",
+                                                "dlSsoId" : "",
+                                                "memberSinceDate" : "",
+                                                "email" : "t@t.com",
+                                                "reissueDate" : "",
+                                                "modelIndicator" : "",
+                                                "billingFirstName" : "",
+                                                "residenceCode" : "",
+                                                "timeAtJob" : "",
+                                                "vehicleOwn" : "",
+                                                "relativePhone" : "",
+                                                "creditLineRqd" : "",
+                                                "contractNumber" : "",
+                                                "passportBirthCity" : "",
+                                                "employerZip" : "",
+                                                "cardDeptStrInd" : "",
+                                                "blackBoxId" : "",
+                                                "title" : "",
+                                                "bankAccountCode" : "",
+                                                "regionalBusinessCode" : "",
+                                                "occupationCode" : "",
+                                                "employerAddress" : "",
+                                                "driverLicenseNumber" : "",
+                                                "applicationType" : "",
+                                                "accoutInfo" : "",
+                                                "mortgageOrRentPay" : "",
+                                                "extensionOverride" : "",
+                                                "employerCity" : "",
+                                                "middleName" : "",
+                                                "suffix" : "",
+                                                "ssnOverride" : "",
+                                                "currentEmployer" : "",
+                                                "relativeCode" : "",
+                                                "routingNumber" : "",
+                                                "cellPhone" : "",
+                                                "frnLangIndicator" : "E",
+                                                "checkingAccountNumber" : "",
+                                                "memberType" : ""
+                                            }
+                                        }
+                                    }
+                                }
+                            </code>
+                        </pre>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>responseCode</code></td>
+                                    <td>000=Approved, 002=Declined, 008=Referral</td>
+                                </tr>
+                                <tr>
+                                    <td><code>accountNumber</code></td>
+                                    <td>This is a temporary account number that can be keyed in at the point of sale or scanned via a barcode to complete a purcahse.</td>
+                                </tr>
+                                <tr>
+                                    <td><code>tempShoppingPassExpiryDate</code></td>
+                                    <td>Expiry date in format YYYYMMDD</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- <h4 class="code-title">Response</h4> -->
+                        <preTitle>Example response:</preTitle>
+                        <pre class="no-margin">
+                            <code class="json">
+
+			{
+			  "applyResponse": {
+				"applyResponse": {
+				  "transactionId": "1476475640247",
+				  "responseCode": "000",
+				  "responseText": "0010 APPROVED",
+				  "keyCode": "AD10XX",
+				  "creditLine": "99.00",
+				  "accountNumber": "5243677779999999",
+				  "tempShoppingPassExpiryDate": "20161014",
+				  "numberofAccountDigits": "16",
+				  "decisionedProductCode": "010",
+				  "dcExpiryDate": "0207",
+				  "dcMMCCode": "0001",
+				  "dcMMCCodeDescription": "ACCOUNT TYPE 1",
+				  "dcDailyRate": "0.02705%",
+				  "dcApr": "8.99%",
+				  "dcCashDailyRate": "0.038%",
+				  "dcCashAnnualRate": "21.99%",
+				  "dcTempCreditLine": "9000.00"
+				}
+			  }
+			}
+
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <!-- <hr> -->
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
