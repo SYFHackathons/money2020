@@ -7,8 +7,8 @@ Install dependencies needed for this example project.
 ---
 
 * Each skill directory contains:
-..* src directory contains node application which can be uploaded to Amazon Lambda
-..* speechAssets with sample utterances and intent schemas
+    * src directory contains node application which can be uploaded to Amazon Lambda
+    * speechAssets with sample utterances and intent schemas
 
 ---
 
@@ -22,4 +22,4 @@ Contains speech assets for ```nextMostLikelyPurchase``` service method
 
 Full service documentation at [https://uat.synchronycredit.com/money2020/](https://uat.synchronycredit.com/money2020/)
 
-More on building Alexa Skills at [https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/overviews/steps-to-build-a-custom-skill](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/overviews/steps-to-build-a-custom-skill) 
+More on building Alexa Skills at [https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/overviews/steps-to-build-a-custom-skill](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/overviews/steps-to-build-a-custom-skill)
