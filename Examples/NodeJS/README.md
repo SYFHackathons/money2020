@@ -1,6 +1,7 @@
 # NodeJS Example
 
 Install dependencies needed for this example project.
+
 ```npm install```
 
 ---
@@ -12,8 +13,8 @@ Install dependencies needed for this example project.
 ---
 
 #### getRewards
-```node getRewards```
+```$ node getRewards```
 #### nextMostLikelyPurchase
-```node getRewards```
+```$ node nextMostLikelyPurchase```
 #### applyForCredit
-```node getRewards```
+```$ node applyForCredit```
