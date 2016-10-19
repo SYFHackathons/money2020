@@ -1,6 +1,5 @@
 # Alexa Skill Examples
 
----
 
 ### Each skill directory contains:
 
