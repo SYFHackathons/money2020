@@ -36,7 +36,7 @@ public class RestClient {
     this.headers = new HttpHeaders();
     headers.add("Content-Type", "application/json");
     headers.add("username","giveitatry");
-	headers.add("password","Sh0wT!me");
+    headers.add("password","Sh0wT!me");
   }
   
   public RestClient(String server) throws Exception{
