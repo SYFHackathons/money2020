@@ -6,7 +6,7 @@ Install dependencies needed for this example project.
 
 ---
 
-#### Each skill directory contains:
+### Each skill directory contains:
 
 * speechAssets (node application which can be uploaded to Amazon Lambda)
 * src (node application which can be uploaded to Amazon Lambda)
@@ -14,11 +14,11 @@ Install dependencies needed for this example project.
 
 ---
 
-#### GetRewards Directory
-    Lambda source code and speech samples to access ```getRewards``` service method
+### GetRewards Directory
+Lambda source code and speech samples to access ```getRewards``` service method
 
-#### NextMostLikelyPurchase Directory
-    Lambda source code and speech samples to access ```nextMostLikelyPurchase``` service method
+### NextMostLikelyPurchase Directory
+Lambda source code and speech samples to access ```nextMostLikelyPurchase``` service method
 
 ---
 
