@@ -7,8 +7,11 @@ Install dependencies needed for this example project.
 ---
 
 #### Each skill directory contains:
-    * src directory contains node application which can be uploaded to Amazon Lambda
-    * speechAssets with sample utterances and intent schemas
+```
++-- speechAssets (node application which can be uploaded to Amazon Lambda)
+|
++-- src (node application which can be uploaded to Amazon Lambda)
+```
 
 ---
 
