@@ -1,9 +1,5 @@
 # Alexa Skill Examples
 
-Install dependencies needed for this example project.
-
-```$ npm install```
-
 ---
 
 ### Each skill directory contains:
