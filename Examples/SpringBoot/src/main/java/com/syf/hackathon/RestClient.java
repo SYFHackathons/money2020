@@ -31,7 +31,7 @@ public class RestClient {
   private HttpStatus status;
 
   public RestClient() throws Exception {
-	this.rest = new RestTemplate();
+    this.rest = new RestTemplate();
     //this.rest = createProxiedRestTemplate();	
     this.headers = new HttpHeaders();
     headers.add("Content-Type", "application/json");
@@ -40,9 +40,9 @@ public class RestClient {
   }
   
   public RestClient(String server) throws Exception{
-	this.server = server;
-	this.rest = new RestTemplate();
-	//this.rest = createProxiedRestTemplate();
+    this.server = server;
+    this.rest = new RestTemplate();
+    //this.rest = createProxiedRestTemplate();
     this.headers = new HttpHeaders();	
   }
 
@@ -69,7 +69,7 @@ public class RestClient {
   } 
   
   public HttpHeaders getHeaders() {
-	return headers;
+    return headers;
   }
   
   /**
