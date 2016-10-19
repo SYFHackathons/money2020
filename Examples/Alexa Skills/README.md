@@ -14,13 +14,17 @@ Install dependencies needed for this example project.
 
 ---
 
+
 ### GetRewards Directory
 Lambda source code and speech samples to access ```getRewards``` service method
+
 
 ### NextMostLikelyPurchase Directory
 Lambda source code and speech samples to access ```nextMostLikelyPurchase``` service method
 
+
 ---
+
 
 Full service documentation at [https://uat.synchronycredit.com/money2020/](https://uat.synchronycredit.com/money2020/)
 
