@@ -1,8 +1,7 @@
 ![Synchrony  Logo](https://www.synchronyfinancial.com/images/synchrony-bank-logo-dhpx.png)
 
-# Synchrony Financial Money20/20 Hackathon Examples
+# Money20/20 Hackathon Code Samples
 
-Welcome to the Money2020 Hackathon.  Browse the `Examples` folder to find example
-code for your project.   
+Welcome to the Money2020 Hackathon!  Clone this repo for code samples that use our Hackathon services!
 
-Check out the documentation for our Hackathon Services at [https://uat.synchronycredit.com/money2020/](https://uat.synchronycredit.com/money2020/)
+Check out the documentation at [https://uat.synchronycredit.com/money2020/](https://uat.synchronycredit.com/money2020/)
