@@ -1,4 +1,4 @@
-![Synchrony  Logo](https://github.com/SYFHackathons/money2020/blob/master/SyfMoneyLogo2020.png)
+![Synchrony  Logo](https://github.com/SYFHackathons/money2020/blob/master/SyfMoney2020Logo.png)
 
 # Money20/20 Hackathon Code Samples
 
