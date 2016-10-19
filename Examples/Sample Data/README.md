@@ -1,7 +1,6 @@
-# Sample Data For `applyForCredit` Service
+# Sample Data
 
-This is test data you can use for your application when using the `applyForCredit`
-service.
+Test data for different users you can use for your application when using the `applyForCredit` service.
 
 ---
 
