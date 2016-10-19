@@ -8,7 +8,6 @@ Install dependencies needed for this example project.
 
 * Add login credentials to globals.js
 * Run each example using commands below
-* Full service documentation at [https://uat.synchronycredit.com/money2020/](https://uat.synchronycredit.com/money2020/)
 
 ---
 
@@ -18,3 +17,7 @@ Install dependencies needed for this example project.
 ```$ node nextMostLikelyPurchase```
 #### applyForCredit
 ```$ node applyForCredit```
+
+---
+
+Full service documentation at [https://uat.synchronycredit.com/money2020/](https://uat.synchronycredit.com/money2020/)
