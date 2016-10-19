@@ -15,10 +15,10 @@ Install dependencies needed for this example project.
 ---
 
 #### GetRewards Directory
-Lambda source code and speech samples to access ```getRewards``` service method
+    Lambda source code and speech samples to access ```getRewards``` service method
 
 #### NextMostLikelyPurchase Directory
-Lambda source code and speech samples to access ```nextMostLikelyPurchase``` service method
+    Lambda source code and speech samples to access ```nextMostLikelyPurchase``` service method
 
 ---
 
