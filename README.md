@@ -1,4 +1,4 @@
-<img src="http://newsroom.synchronyfinancial.com/sites/synchrony.newshq.businesswire.com/files/logo/file/SF_logo_goldcharcoal_whitebkgrd_rgb_500px.jpg" style="width:250px">
+![Synchrony  Logo](https://www.synchronyfinancial.com/images/synchrony-bank-logo-dhpx.png)
 
 # Synchrony Financial Money20/20 Hackathon Examples
 
