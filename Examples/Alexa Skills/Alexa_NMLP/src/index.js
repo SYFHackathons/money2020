@@ -1,7 +1,7 @@
 var APP_ID = 'amzn1.ask.skill.58d69239-cc5a-437d-a975-afe6e789a3b8'; //replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
 var AlexaSkill = require('./AlexaSkill');
 
-/**Define all the variables for the getRewards Request here */
+/**Define all the variables for the Next Most Likely Purchase Request here */
 //request and request-promise should be bundled in with node modules (do npm install for each and include node_modules folder in zip file)
 var request = require('request');
 var rp = require('request-promise');
@@ -10,7 +10,7 @@ var rp = require('request-promise');
 var username="giveitatry";
 var password="Sh0wT!me";
 
-//Reqest payload for GetRewards includes url, requestPayload and options
+//Reqest payload for Next Most Likely Purchase includes url, requestPayload and options
 var url = "https://syf2020.syfwebservices.com/syf/nextMostLikelyPurchase";
 
 var requestPayload = {
