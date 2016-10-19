@@ -2,7 +2,7 @@
 
 Install dependencies needed for this example project.
 
-```npm install```
+```$ npm install```
 
 ---
 
