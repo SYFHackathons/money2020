@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F89F155539EE5B5071A098FAADA41369A73A7E92",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F89F155539EE5B5071A098FAADA41369A73A7E92" : 9223372036854775807,
+    "1A7577795DB966E41E0F68A7E9D81C205EB313D9" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "29536E85-071E-49C3-A54A-75699CEE98F1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F89F155539EE5B5071A098FAADA41369A73A7E92" : "money2020\/",
+    "1A7577795DB966E41E0F68A7E9D81C205EB313D9" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Money2020Swift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Examples\/iOS-Swift\/Money2020Swift\/Money2020Swift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SYFHackathons\/money2020",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1A7577795DB966E41E0F68A7E9D81C205EB313D9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SYFHackathons\/money2020.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F89F155539EE5B5071A098FAADA41369A73A7E92"
+    }
+  ]
+}
