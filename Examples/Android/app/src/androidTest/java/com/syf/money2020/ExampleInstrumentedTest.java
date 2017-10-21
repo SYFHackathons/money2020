@@ -1,4 +1,4 @@
-package com.syf.synchronymoney2020;
+package com.syf.money2020;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.syf.synchronymoney2020", appContext.getPackageName());
+        assertEquals("com.syf.money2020", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package com.syf.synchronymoney2020;
+package com.syf.money2020;
 
 import org.junit.Test;
 
