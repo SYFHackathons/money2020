@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Money2020</string>
-    <string name="action_settings">Settings</string>
+    <string name="button_loyalty">Loyalty</string>
+    <string name="button_advice">Advice</string>
+    <string name="button_next_purchase">Next Purchase</string>
 </resources>
